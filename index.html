@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D & Веб Дизайнер | Figma & Blender</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+        @media (max-width: 768px) {
+            .gradient-text {
+                font-size: 2.5rem;
+            }
+            #vanta-bg {
+                min-height: 100vh;
+            }
+            header nav {
+                padding: 0.75rem 1rem;
+            }
+            main section {
+                padding: 2rem 0;
+            }
+        }
+.gradient-text {
+            background: linear-gradient(90deg, #7E22CE 0%, #3B82F6 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        .glass-effect {
+            background: rgba(15, 23, 42, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-100 min-h-screen">
+    <div id="vanta-bg" class="fixed top-0 left-0 w-full h-full z-0"></div>
+    
+    <header class="relative z-10">
+        <nav class="glass-effect py-4 px-6 rounded-full max-w-6xl mx-4 lg:mx-auto mt-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <i data-feather="box" class="text-purple-500"></i>
+                <span class="text-xl font-bold">Слуцкий Алексей</span>
+            </div>
+            <div class="hidden md:flex space-x-6">
+                <a href="#about" class="hover:text-purple-400 transition">Обо мне</a>
+                <a href="#services" class="hover:text-purple-400 transition">Услуги</a>
+                <a href="#portfolio" class="hover:text-purple-400 transition">Портфолио</a>
+                <a href="#contact" class="hover:text-purple-400 transition">Контакты</a>
+            </div>
+            <button class="md:hidden">
+                <i data-feather="menu"></i>
+            </button>
+        </nav>
+    </header>
+
+    <main class="relative z-10 max-w-6xl mx-auto px-4 py-16">
+        <section class="flex flex-col md:flex-row items-center justify-between gap-12 mb-24">
+            <div class="md:w-1/2">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6">Превращаю ваши идеи в <span class="gradient-text">реальность</span></h1>
+                <p class="text-lg text-gray-300 mb-8">Создаю современные интерфейсы в Figma и 3D модели в Blender. Удовлетворение запросов заказчика — мой главный принцип.</p>
+                <div class="flex gap-4">
+                    <a href="#contact" class="bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-lg font-medium transition">Обсудить проект</a>
+                    <a href="#portfolio" class="border border-purple-600 text-purple-400 hover:bg-purple-900/30 px-6 py-3 rounded-lg font-medium transition">Посмотреть работы</a>
+                </div>
+            </div>
+            <div class="md:w-1/2 relative">
+                <div class="relative">
+                    <img src="http://static.photos/technology/640x360/42" alt="3D дизайнер за работой" class="rounded-2xl shadow-2xl w-full">
+                    <div class="absolute -bottom-6 -right-6 bg-purple-600 p-4 rounded-xl shadow-lg">
+                        <i data-feather="award" class="w-8 h-8"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="mb-24">
+            <h2 class="text-3xl font-bold mb-12 text-center">Обо мне</h2>
+            <div class="glass-effect p-8 rounded-2xl">
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-4">Привет, я Алексей</h3>
+                        <p class="text-gray-300 mb-6">Начинающий 3D и веб-дизайнер. Специализируюсь на создании:</p>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <i data-feather="check-circle" class="text-purple-500 mr-2 mt-1"></i>
+                                <span>UI/UX дизайн в Figma</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="check-circle" class="text-purple-500 mr-2 mt-1"></i>
+                                <span>3D моделирование и визуализация в Blender</span>
+                            </li>
+                        </ul>
+</div>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="bg-gray-800/50 p-4 rounded-lg">
+                            <i data-feather="figma" class="w-8 h-8 text-purple-500 mb-2"></i>
+                            <h4 class="font-bold mb-1">Figma</h4>
+                            <p class="text-sm text-gray-400">UI/UX дизайн</p>
+                        </div>
+                        <div class="bg-gray-800/50 p-4 rounded-lg">
+                            <i data-feather="box" class="w-8 h-8 text-purple-500 mb-2"></i>
+                            <h4 class="font-bold mb-1">Blender</h4>
+                            <p class="text-sm text-gray-400">3D моделирование</p>
+                        </div>
+                    </div>
+</div>
+            </div>
+        </section>
+
+        <section id="services" class="mb-24">
+            <h2 class="text-3xl font-bold mb-12 text-center">Услуги</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+<div class="glass-effect p-6 rounded-xl hover:border-purple-500 border border-gray-800 transition">
+                    <div class="bg-purple-900/20 p-3 rounded-lg inline-block mb-4">
+                        <i data-feather="layout" class="w-6 h-6 text-purple-400"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">UI/UX Дизайн</h3>
+                    <p class="text-gray-400 mb-4">Создаю интуитивно понятные интерфейсы с продуманным пользовательским опытом.</p>
+                    <ul class="text-sm space-y-2">
+                        <li class="flex items-center">
+                            <i data-feather="check" class="w-4 h-4 mr-2 text-purple-400"></i>
+                            Веб и мобильные интерфейсы
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="check" class="w-4 h-4 mr-2 text-purple-400"></i>
+                            Прототипирование
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="check" class="w-4 h-4 mr-2 text-purple-400"></i>
+                            Дизайн система
+                        </li>
+                    </ul>
+                </div>
+                <div class="glass-effect p-6 rounded-xl hover:border-purple-500 border border-gray-800 transition">
+                    <div class="bg-purple-900/20 p-3 rounded-lg inline-block mb-4">
+                        <i data-feather="box" class="w-6 h-6 text-purple-400"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">3D Моделирование</h3>
+                    <p class="text-gray-400 mb-4">Разрабатываю 3D модели и визуализации для сайтов, игр и рекламы.</p>
+                    <ul class="text-sm space-y-2">
+                        <li class="flex items-center">
+                            <i data-feather="check" class="w-4 h-4 mr-2 text-purple-400"></i>
+                            Продуктовые визуализации
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="check" class="w-4 h-4 mr-2 text-purple-400"></i>
+                            Персонажи и окружение
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="check" class="w-4 h-4 mr-2 text-purple-400"></i>
+                            Анимации и рендеры
+                        </li>
+                    </ul>
+                </div>
+</div>
+        </section>
+
+        <section id="portfolio" class="mb-24">
+            <h2 class="text-3xl font-bold mb-12 text-center">Портфолио</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="glass-effect rounded-xl overflow-hidden group">
+                    <div class="relative overflow-hidden">
+                        <img src="http://static.photos/technology/1024x576/1" alt="UI/UX проект" class="w-full h-64 object-cover transition duration-500 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition flex items-end p-6">
+                            <div>
+                                <h3 class="text-xl font-bold">Финансовое приложение</h3>
+                                <p class="text-gray-300">UI/UX дизайн мобильного банкинга</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-sm text-purple-400">UI/UX Design</span>
+                            <span class="text-sm text-gray-400">2024</span>
+                        </div>
+                        <p class="text-gray-300">Современный интерфейс для мобильного банкинга с упором на удобство управления финансами.</p>
+                    </div>
+                </div>
+                <div class="glass-effect rounded-xl overflow-hidden group">
+                    <div class="relative overflow-hidden">
+                        <img src="http://static.photos/technology/1024x576/2" alt="3D проект" class="w-full h-64 object-cover transition duration-500 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition flex items-end p-6">
+                            <div>
+                                <h3 class="text-xl font-bold">Архитектурная визуализация</h3>
+                                <p class="text-gray-300">3D рендер современного дома</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-sm text-purple-400">3D Modeling</span>
+                            <span class="text-sm text-gray-400">2023</span>
+                        </div>
+                        <p class="text-gray-300">Фотореалистичная визуализация загородного дома в современном стиле.</p>
+                    </div>
+                </div>
+            </div>
+<div class="text-center mt-10">
+                <a href="#" class="inline-flex items-center text-purple-400 hover:text-purple-300">
+                    Смотреть все работы
+                    <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+                </a>
+            </div>
+        </section>
+
+        <section id="contact" class="mb-16">
+            <h2 class="text-3xl font-bold mb-12 text-center">Давайте работать вместе</h2>
+            <div class="glass-effect p-8 rounded-2xl">
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-xl font-bold mb-6">Свяжитесь со мной</h3>
+                        <p class="text-gray-300 mb-8">Готов обсудить ваш проект и предложить решения. Отвечаю как только, так сразу.</p>
+                        <div class="space-y-4">
+                            <div class="flex items-center">
+                                <div class="bg-purple-600 p-2 rounded-lg mr-4">
+                                    <i data-feather="mail" class="w-5 h-5"></i>
+                                </div>
+                                <div>
+                                    <p class="text-sm text-gray-400">Email</p>
+                                    <p class="font-medium">slalexdesignwork@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="bg-purple-600 p-2 rounded-lg mr-4">
+                                    <i data-feather="send" class="w-5 h-5"></i>
+                                </div>
+                                <div>
+                                    <p class="text-sm text-gray-400">Telegram</p>
+                                    <p class="font-medium">@s01evar</p>
+                                </div>
+                            </div>
+</div>
+                    </div>
+                    <div>
+                        <form class="space-y-4">
+                            <div>
+                                <label for="name" class="block text-sm font-medium mb-1">Ваше имя</label>
+                                <input type="text" id="name" class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 focus:border-purple-500 focus:ring-purple-500 outline-none">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-medium mb-1">Email</label>
+                                <input type="email" id="email" class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 focus:border-purple-500 focus:ring-purple-500 outline-none">
+                            </div>
+                            <div>
+                                <label for="message" class="block text-sm font-medium mb-1">Сообщение</label>
+                                <textarea id="message" rows="4" class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 focus:border-purple-500 focus:ring-purple-500 outline-none"></textarea>
+                            </div>
+                            <button type="submit" class="bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-lg font-medium transition w-full">Отправить сообщение</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="relative z-10 bg-gray-900/80 py-8">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="flex items-center space-x-2 mb-4 md:mb-0">
+                    <i data-feather="box" class="text-purple-500"></i>
+                    <span class="text-lg font-bold">Алексей Слуцкий</span>
+                </div>
+                <div class="flex space-x-6 mb-4 md:mb-0">
+                    <a href="mailto:slalexdesignwork@gmail.com" class="hover:text-purple-400 transition">
+                        <i data-feather="mail"></i>
+                    </a>
+                    <a href="https://t.me/s01evar" class="hover:text-purple-400 transition">
+                        <i data-feather="send"></i>
+                    </a>
+</div>
+                <p class="text-sm text-gray-400">© 2025 Алексей Слуцкий. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        VANTA.NET({
+            el: "#vanta-bg",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0x7e22ce,
+            backgroundColor: 0x111827,
+            points: 10.00,
+            maxDistance: 22.00,
+            spacing: 18.00
+        });
+    </script>
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>
+
+<!-- сделано в -->
+<!-- https://enzostvs-deepsite.hf.space/aboba0377/undefined -->
+<!-- + несколько эдитов + редактирование текста руками-->
